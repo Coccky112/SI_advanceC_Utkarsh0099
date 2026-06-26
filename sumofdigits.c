@@ -1,18 +1,18 @@
 #include <stdio.h>
 
 int main() {
-    int n, rev = 0, rem;
+    int n, rem, sum = 0;
 
     printf("Enter a number: ");
     scanf("%d", &n);
 
     while(n > 0) {
         rem = n % 10;
-        rev = rev * 10 + rem;
+        sum += rem;
         n /= 10;
     }
 
-    printf("Reversed Number = %d", rev);
+    printf("Sum of Digits = %d", sum);
 
     return 0;
 }
